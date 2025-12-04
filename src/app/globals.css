@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, "Segoe UI", Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+.title {
+  font-family: "BBH Sans Hegarty", var(--font-sans);
+}
+
+/* SaaS dark theme helpers */
+.section {
+  @apply mx-auto px-6 ;
+}
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm md:text-base transition-colors duration-200;
+}
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm md:text-base transition-colors duration-200;
+  @apply bg-blue-500/90 text-white hover:bg-blue-400/90 active:bg-blue-500/90;
+}
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm md:text-base transition-colors duration-200;
+  @apply bg-white/10 text-white hover:bg-white/20;
+}
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+a:focus-visible, button:focus-visible {
+  @apply outline-none ring-2 ring-blue-400 ring-offset-2 ring-offset-transparent rounded-md;
+}
