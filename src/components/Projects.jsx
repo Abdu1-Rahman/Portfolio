@@ -2,23 +2,23 @@ import React from 'react'
 
 const demoProjects = [
   {
-    title: 'Analytics Dashboard',
-    description: 'A responsive dashboard with charts and real-time KPIs.',
-    tags: ['Next.js', 'Tailwind', 'Recharts'],
+    title: 'Penne Analytics Dashboard',
+    description: 'A smart e-commerce management dashboard that gives store owners real-time insights into sales, inventory health, order flow, and customer behavior.',
+    tags: ['UI/UX', 'Dashboard', 'E-commerce'],
     live: '#',
     code: '#',
   },
   {
-    title: 'E-commerce UI',
-    description: 'Beautiful storefront pages with cart and checkout flow.',
-    tags: ['React', 'Stripe', 'UI'],
+    title: 'Penne Checkout Optimization',
+    description: 'A focused UX redesign of the checkout experience to reduce friction, improve clarity, and increase trust during the purchase flow.',
+    tags: ['UX Redesign', 'E-commerce', 'Usability'],
     live: '#',
     code: '#',
   },
   {
-    title: 'SaaS Marketing Site',
-    description: 'Landing pages with blog, pricing, and contact forms.',
-    tags: ['Next.js', 'SEO', 'Content'],
+    title: 'Voyage — AI Trip Planner',
+    description: 'An intelligent travel planning interface that helps users build personalized itineraries, compare routes, and collaborate with friends.',
+    tags: ['UI/UX', 'Travel', 'Product Design'],
     live: '#',
     code: '#',
   },
@@ -43,8 +43,8 @@ const Projects = () => {
               ))}
             </div>
             <div className="mt-5 flex gap-3">
-              <a className="btn-secondary" href={p.live} aria-label={`Open ${p.title} live`}>Live</a>
-              <a className="btn-primary" href={p.code} aria-label={`Open ${p.title} code`}>Code</a>
+              <a className="btn-secondary" href={p.live} aria-label={`Open ${p.title} live`}>Case Study</a>
+              <a className="btn-primary" href={p.code} aria-label={`Open ${p.title} code`}>Coming Soon</a>
             </div>
           </div>
         ))}

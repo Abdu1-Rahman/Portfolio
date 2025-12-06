@@ -30,23 +30,23 @@ const Navbar = () => {
             </button>
           </div>
           {menuOpen && (
-            <div className='absolute right-3 top-full mt-2 w-44 rounded-xl glass p-2 md:hidden z-[110]'>
+            <div className='fixed right-4 top-20 w-44 rounded-xl glass p-2 md:hidden z-[5000]'>
               <ul className='flex flex-col gap-1 text-gray-300'>
                 <li>
                   <Link className='block w-full px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition'
-                    href="/about" onClick={() => setMenuOpen(false)}>
+                    href="#about" onClick={() => setMenuOpen(false)}>
                     About
                   </Link>
                 </li>
                 <li>
                   <Link className='block w-full px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition'
-                    href="/projects" onClick={() => setMenuOpen(false)}>
+                    href="#projects" onClick={() => setMenuOpen(false)}>
                     Projects
                   </Link>
                 </li>
                 <li>
                   <Link className='block w-full px-3 py-2 rounded-lg hover:text-white hover:bg-white/5 transition'
-                    href="/contact" onClick={() => setMenuOpen(false)}>
+                    href="#contact" onClick={() => setMenuOpen(false)}>
                     Contact
                   </Link>
                 </li>
